@@ -67,17 +67,22 @@ namespace ExportDataToExcel.Views
             var mashines8 = GetMashines(Grid9);
             var mashines9 = GetMashines(Grid10);
             var mashines10 = GetMashines(Grid11);
-
+            model.Tecn = new List<Technique>();
+            if (Teckn1.SelectedItem != null)
             //записываем первую технику 
-            var Tex1 = new Technique
             {
-                Id = 1,
-                DriverName = Fam1.Text,
-                Name = Teckn1.SelectedItem.ToString(),
-                Poroda = Poroda1.Text,
-                WorkPlace = Place1.Text,
-                Mashines = mashines1
-            };
+                var Tex1 = new Technique
+                {
+                    Id = 1,
+                    DriverName = Fam1.Text,
+                    Name = Teckn1.SelectedItem.ToString(),
+                    Poroda = Poroda1.Text,
+                    WorkPlace = Place1.Text,
+                    Mashines = mashines1
+                };
+                model.Tecn.Add(Tex1);
+            }
+
             if (Teckn2.SelectedItem != null)
             {
                 var Tex2 = new Technique
@@ -211,7 +216,6 @@ namespace ExportDataToExcel.Views
 
             }
 
-            model.Tecn.Add(Tex1);
 
 
             return model;
