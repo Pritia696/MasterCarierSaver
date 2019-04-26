@@ -29,6 +29,13 @@ namespace ExportDataToExcel.Models
         public string DriverMName { get; set; }
         public string Reis { get; set; }
         public string Plecho { get; set; }
+        public List<TechMin> TechMins { get; set; }
 
     }
+    public class TechMin
+    {
+        public string Name { get; set; }
+        public int Index { get; set; }
+    }
+
 }

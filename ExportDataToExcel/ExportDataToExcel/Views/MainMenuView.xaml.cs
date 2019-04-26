@@ -71,6 +71,18 @@ namespace ExportDataToExcel.Views
             if (Teckn1.SelectedItem != null)
             //записываем первую технику 
             {
+                foreach(var mas in mashines1)
+                {
+                    mas.TechMins = new List<TechMin>();
+
+                      var m = new TechMin
+                    {
+                        Name = Teckn1.SelectedItem.ToString(),
+                        Index = 1
+                    };
+                    mas.TechMins.Add(m);
+                }
+
                 var Tex1 = new Technique
                 {
                     Id = 1,
@@ -85,6 +97,17 @@ namespace ExportDataToExcel.Views
 
             if (Teckn2.SelectedItem != null)
             {
+                foreach (var mas in mashines2)
+                {
+                    mas.TechMins = new List<TechMin>();
+
+                    var m = new TechMin
+                    {
+                        Name = Teckn2.SelectedItem.ToString(),
+                        Index = 2
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex2 = new Technique
                 {
                     Id = 2,
@@ -100,7 +123,17 @@ namespace ExportDataToExcel.Views
 
             if (Teckn3.SelectedItem != null)
             {
+                foreach (var mas in mashines3)
+                {
+                    mas.TechMins = new List<TechMin>();
 
+                    var m = new TechMin
+                    {
+                        Name = Teckn3.SelectedItem.ToString(),
+                        Index = 3
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex3 = new Technique
                 {
                     Id = 3,
@@ -116,6 +149,16 @@ namespace ExportDataToExcel.Views
             if (Teckn4.SelectedItem != null)
             {
 
+                foreach (var mas in mashines4)
+                {
+                    mas.TechMins = new List<TechMin>();
+                    var m = new TechMin
+                    {
+                        Name = Teckn4.SelectedItem.ToString(),
+                        Index = 4
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex4 = new Technique
                 {
                     Id = 4,
@@ -131,6 +174,16 @@ namespace ExportDataToExcel.Views
 
             if (Teckn5.SelectedItem != null)
             {
+                foreach (var mas in mashines5)
+                {
+                    mas.TechMins = new List<TechMin>();
+                    var m = new TechMin
+                    {
+                        Name = Teckn5.SelectedItem.ToString(),
+                        Index = 5
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex5 = new Technique
                 {
                     Id = 5,
@@ -145,6 +198,16 @@ namespace ExportDataToExcel.Views
             }
             if (Teckn6.SelectedItem != null)
             {
+                foreach (var mas in mashines6)
+                {
+                    mas.TechMins = new List<TechMin>();
+                    var m = new TechMin
+                    {
+                        Name = Teckn6.SelectedItem.ToString(),
+                        Index = 6
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex6 = new Technique
                 {
                     Id = 6,
@@ -160,6 +223,16 @@ namespace ExportDataToExcel.Views
 
             if (Teckn7.SelectedItem != null)
             {
+                foreach (var mas in mashines7)
+                {
+                    mas.TechMins = new List<TechMin>();
+                    var m = new TechMin
+                    {
+                        Name = Teckn7.SelectedItem.ToString(),
+                        Index = 7
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex7 = new Technique
                 {
                     Id = 7,
@@ -175,6 +248,16 @@ namespace ExportDataToExcel.Views
 
             if (Teckn8.SelectedItem != null)
             {
+                foreach (var mas in mashines8)
+                {
+                    mas.TechMins = new List<TechMin>();
+                    var m = new TechMin
+                    {
+                        Name = Teckn8.SelectedItem.ToString(),
+                        Index = 8
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex8 = new Technique
                 {
                     Id = 8,
@@ -189,6 +272,16 @@ namespace ExportDataToExcel.Views
             }
             if (Teckn9.SelectedItem != null)
             {
+                foreach (var mas in mashines9)
+                {
+                    mas.TechMins = new List<TechMin>();
+                    var m = new TechMin
+                    {
+                        Name = Teckn9.SelectedItem.ToString(),
+                        Index = 9
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex9 = new Technique
                 {
                     Id = 9,
@@ -203,6 +296,16 @@ namespace ExportDataToExcel.Views
             }
             if (Teckn10.SelectedItem != null)
             {
+                foreach (var mas in mashines10)
+                {
+                    mas.TechMins = new List<TechMin>();
+                    var m = new TechMin
+                    {
+                        Name = Teckn10.SelectedItem.ToString(),
+                        Index = 10
+                    };
+                    mas.TechMins.Add(m);
+                }
                 var Tex10 = new Technique
                 {
                     Id = 10,

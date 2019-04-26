@@ -20,7 +20,12 @@ namespace ExportDataToExcel.ViewModels
 {
     public class MainMenuViewModel : BaseViewModel
     {
-
+        List<String> cars = new List<String>
+            {
+                "CAT 772G 07-88","CAT 772G 21-59","CAT 772G 21-60","CAT 773G 95-04","Volvo A40G 19-51","Volvo A40G 19-52",
+                "Volvo A40F 74-01","Volvo A40F 74-02","Volvo A40E 66-29","Volvo A40E 66-30","Volvo A40E 66-31",
+                "Volvo A40G 42-75","Volvo A40G 42-76","Volvo A40G 42-77","BelAZ 75-40 650","BelAZ 75-40 61-36"
+            };
         public MainMenuViewModel(ReportModel model)
         {
             Title = "Xamarin Developers";
@@ -57,6 +62,26 @@ namespace ExportDataToExcel.ViewModels
                     WorksheetPart worksheetPart = workbookPart.AddNewPart<WorksheetPart>();
                     worksheetPart.Worksheet = new Worksheet();
 
+                    // Задаем колонки и их ширину
+                    Columns lstColumns = worksheetPart.Worksheet.GetFirstChild<Columns>();
+                    Boolean needToInsertColumns = false;
+                    if (lstColumns == null)
+                    {
+                        lstColumns = new Columns();
+                        needToInsertColumns = true;
+                    }
+                    lstColumns.Append(new Column() { Min = 1, Max = 10, Width = 12, CustomWidth = true });
+                    lstColumns.Append(new Column() { Min = 2, Max = 10, Width = 12, CustomWidth = true });
+                    lstColumns.Append(new Column() { Min = 3, Max = 10, Width = 12, CustomWidth = true });
+                    lstColumns.Append(new Column() { Min = 4, Max = 10, Width = 12, CustomWidth = true });
+                    lstColumns.Append(new Column() { Min = 5, Max = 10, Width = 12, CustomWidth = true });
+                    lstColumns.Append(new Column() { Min = 6, Max = 10, Width = 12, CustomWidth = true });
+                    lstColumns.Append(new Column() { Min = 7, Max = 10, Width = 12, CustomWidth = true });
+                    if (needToInsertColumns)
+                        worksheetPart.Worksheet.InsertAt(lstColumns, 0);
+
+
+
                     Sheets sheets = workbookPart.Workbook.AppendChild(new Sheets());
                     Sheet sheet = new Sheet() { Id = workbookPart.GetIdOfPart(worksheetPart), SheetId = 1, Name = "MasterReport" };
                     sheets.Append(sheet);
@@ -89,49 +114,89 @@ namespace ExportDataToExcel.ViewModels
                     sheetData.Append(row);
                     InsertCell("№ а/м", CellValues.String, 1, row);
                     InsertCell("№ погр.", CellValues.String, 1, row);
-
+                    foreach (var t in model.Tecn)
+                    {
+                        InsertCell(t.Name, CellValues.String, 1, row);
+                        InsertCell("", CellValues.String, 1, row);
+                    }
 
                     row = new Row { RowIndex = 6 };
                     sheetData.Append(row);
                     InsertCell("", CellValues.String, 1, row);
                     InsertCell("Водитель", CellValues.String, 1, row);
+                    foreach (var t in model.Tecn)
+                    {
+                        InsertCell(t.DriverName, CellValues.String, 1, row);
+                        InsertCell("", CellValues.String, 1, row);
+
+                    }
 
                     row = new Row { RowIndex = 7 };
                     sheetData.Append(row);
                     InsertCell("", CellValues.String, 1, row);
                     InsertCell("ГП", CellValues.String, 1, row);
+                    foreach (var t in model.Tecn)
+                    {
+                        InsertCell(t.Poroda, CellValues.String, 1, row);
+                        InsertCell("", CellValues.String, 1, row);
+
+                    }
 
                     row = new Row { RowIndex = 8 };
                     sheetData.Append(row);
                     InsertCell("", CellValues.String, 1, row);
                     InsertCell("Напр.", CellValues.String, 1, row);
+                    foreach (var t in model.Tecn)
+                    {
+                        InsertCell(t.WorkPlace, CellValues.String, 1, row);
+                        InsertCell("", CellValues.String, 1, row);
 
-                    // Insert the header row to the Sheet Data
-                    var Developer = new Technique
-                    {
-                        DriverName = "djlntkm1",
-                        Name = "123"
-                    };
-                    var Developer2 = new Technique
-                    {
-                        DriverName = "djlntkm2",
-                        Name = "456"
-                    };
-                    var Developers = new List<Technique>();
-                    Developers.Add(Developer);
-                    Developers.Add(Developer2);
-
-                    // Add each product
-                    foreach (var d in Developers)
-                    {
-                        row = new Row { RowIndex = 9 };
-                        row.Append(
-                            ConstructCell(d.Name.ToString(), CellValues.String),
-                            ConstructCell(d.DriverName, CellValues.String)
-                            );
-                            
-                        sheetData.AppendChild(row);
                     }
+                    UInt32Value i = 9;
+                    foreach (var car in cars)
+                    {
+                        var listmash = new List<Mashine>();
+                        row = new Row { RowIndex = i };
+                        sheetData.Append(row);
+                        InsertCell(car, CellValues.String, 1, row);
+                        foreach (var tex in model.Tecn)
+                        {
+                           if (tex.Mashines!= null)
+                            {
+                              var mashin = tex.Mashines.Where(x => x.Name == car).FirstOrDefault();
+                                if (mashin != null)
+                                {
+                                    listmash.Add(mashin);
+                                }
+                            }
+
+                        }
+                        if (listmash.Count != 0)
+                        {
+                           var fmash =  listmash.First();
+                           InsertCell(fmash.DriverMName, CellValues.String, 1, row);
+                           var texmins = listmash.Select(x => x.TechMins).FirstOrDefault();
+                            foreach (var tex2 in texmins)
+                            {
+                                for (i = 1; i < 10; i++)
+                                {
+                                     if (i == tex2.Index)
+                                    {
+                                        InsertCell(fmash.Reis, CellValues.String, 1, row);
+                                        InsertCell(fmash.Plecho, CellValues.String, 1, row);
+                                    }
+                                    else
+                                    {
+                                        InsertCell("", CellValues.String, 1, row);
+                                        InsertCell("", CellValues.String, 1, row);
+                                    }
+                                }
+                            }
+                           
+                        }
+                        i++;
+                    }
+                    
 
                     worksheetPart.Worksheet.Save();
                     MessagingCenter.Send(this, "DataExportedSuccessfully");
