@@ -639,7 +639,7 @@
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam10" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
-                    <Entry x:Name="Poroda10" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <Entry x:Name="Poroda10" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"  IsEnabled="false" Text="Отходы"></Entry>
                     <Entry x:Name="Place10" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
                     <Switch x:Name="Check10" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
@@ -661,6 +661,27 @@
                     Clicked="AddRow10"/>
                 <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment10"></Editor>
 
+                <BoxView Color="Gray" WidthRequest="1" HeightRequest="2"/>
+                <Label Text="Вспомогательные работы" FontSize="Large" HorizontalTextAlignment="Center"/>
+                <BoxView Color="Gray" WidthRequest="1" HeightRequest="2"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Entry Grid.Column="1" Grid.Row="1" Placeholder="Техника" FontSize="Small"></Entry>
+                    <Entry Grid.Column="2" Grid.Row="1" Placeholder="Водитель" FontSize="Small"></Entry>
+                    <Entry Grid.Column="3" Grid.Row="1" Placeholder="Выполняемая работа" FontSize="Small"></Entry>
+
+                </Grid>
                 <Button Text="Сохранить" Clicked="SavePhone" />
             </StackLayout>
         </ScrollView>
