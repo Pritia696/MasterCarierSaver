@@ -149,13 +149,15 @@ namespace ExportDataToExcel.ViewModels
                     foreach (var t in model.Tecn)
                     {
                         InsertCell(t.WorkPlace, CellValues.String, 1, row);
-                        InsertCell("", CellValues.String, 1, row);
+                                                InsertCell("", CellValues.String, 1, row);
 
                     }
                     UInt32Value i = 9;
+
                     foreach (var car in cars)
                     {
                         var listmash = new List<Mashine>();
+
                         row = new Row { RowIndex = i };
                         sheetData.Append(row);
                         InsertCell(car, CellValues.String, 1, row);
@@ -173,28 +175,48 @@ namespace ExportDataToExcel.ViewModels
                         }
                         if (listmash.Count != 0)
                         {
-                           var fmash =  listmash.First();
-                           InsertCell(fmash.DriverMName, CellValues.String, 1, row);
-                           var texmins = listmash.Select(x => x.TechMins).FirstOrDefault();
+                            var fmash = listmash.First();
+                            InsertCell(fmash.DriverMName, CellValues.String, 1, row);
+                            var texmins = listmash.Select(x => x.TechMins).ToList();
                             foreach (var tex2 in texmins)
                             {
-                                for (i = 1; i < 10; i++)
+                                foreach (var tt in tex2)
                                 {
-                                     if (i == tex2.Index)
+                                    for (var rrr = 1; rrr < 10; rrr++)
                                     {
-                                        InsertCell(fmash.Reis, CellValues.String, 1, row);
-                                        InsertCell(fmash.Plecho, CellValues.String, 1, row);
-                                    }
-                                    else
-                                    {
-                                        InsertCell("", CellValues.String, 1, row);
-                                        InsertCell("", CellValues.String, 1, row);
+                                        if (rrr == tt.Index)
+                                        { 
+                                            InsertCell(listmash[rrr - 1].Reis, CellValues.String, 1, row);
+                                            InsertCell(listmash[rrr - 1].Plecho, CellValues.String, 1, row);
+                                        }
+                                        //else
+                                        //{
+                                        //    InsertCell("", CellValues.String, 1, row);
+                                        //    InsertCell("", CellValues.String, 1, row);
+                                        //}
                                     }
                                 }
                             }
-                           
+
                         }
+
                         i++;
+                    }
+
+                    //комментарий 
+                    row = new Row { RowIndex = i };
+                    InsertCell("Комментарий", CellValues.String, 1, row);
+                    foreach (var texnic in model.Tecn)
+                    {
+                        if(!String.IsNullOrEmpty( texnic.Comment) )
+                        {
+                            InsertCell(texnic.Comment, CellValues.String, 1, row);
+                        }
+                        else
+                        {
+                            InsertCell("", CellValues.String, 1, row);
+                        }
+
                     }
                     
 

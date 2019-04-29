@@ -90,7 +90,8 @@ namespace ExportDataToExcel.Views
                     Name = Teckn1.SelectedItem.ToString(),
                     Poroda = Poroda1.Text,
                     WorkPlace = Place1.Text,
-                    Mashines = mashines1
+                    Mashines = mashines1,
+                    Comment = comment1.Text
                 };
                 model.Tecn.Add(Tex1);
             }
@@ -115,7 +116,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn2.SelectedItem.ToString(),
                     Poroda = Poroda2.Text,
                     WorkPlace = Place2.Text,
-                    Mashines = mashines2
+                    Mashines = mashines2,
+                    Comment = comment2.Text
+
                 };
                 model.Tecn.Add(Tex2);
 
@@ -141,7 +144,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn3.SelectedItem.ToString(),
                     Poroda = Poroda3.Text,
                     WorkPlace = Place3.Text,
-                    Mashines = mashines3
+                    Mashines = mashines3,
+                    Comment = comment3.Text
+
                 };
                 model.Tecn.Add(Tex3);
 
@@ -166,7 +171,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn4.SelectedItem.ToString(),
                     Poroda = Poroda4.Text,
                     WorkPlace = Place4.Text,
-                    Mashines = mashines4
+                    Mashines = mashines4,
+                    Comment = comment4.Text
+
                 };
                 model.Tecn.Add(Tex4);
 
@@ -191,7 +198,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn5.SelectedItem.ToString(),
                     Poroda = Poroda5.Text,
                     WorkPlace = Place5.Text,
-                    Mashines = mashines5
+                    Mashines = mashines5,
+                    Comment = comment5.Text
+
                 };
                 model.Tecn.Add(Tex5);
 
@@ -215,7 +224,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn6.SelectedItem.ToString(),
                     Poroda = Poroda6.Text,
                     WorkPlace = Place6.Text,
-                    Mashines = mashines6
+                    Mashines = mashines6,
+                    Comment = comment6.Text
+
                 };
                 model.Tecn.Add(Tex6);
 
@@ -240,7 +251,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn7.SelectedItem.ToString(),
                     Poroda = Poroda7.Text,
                     WorkPlace = Place7.Text,
-                    Mashines = mashines7
+                    Mashines = mashines7,
+                    Comment = comment7.Text
+
                 };
                 model.Tecn.Add(Tex7);
 
@@ -265,7 +278,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn8.SelectedItem.ToString(),
                     Poroda = Poroda8.Text,
                     WorkPlace = Place8.Text,
-                    Mashines = mashines8
+                    Mashines = mashines8,
+                    Comment = comment8.Text
+
                 };
                 model.Tecn.Add(Tex8);
 
@@ -289,7 +304,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn9.SelectedItem.ToString(),
                     Poroda = Poroda9.Text,
                     WorkPlace = Place9.Text,
-                    Mashines = mashines9
+                    Mashines = mashines9,
+                    Comment = comment9.Text
+
                 };
                 model.Tecn.Add(Tex9);
 
@@ -313,7 +330,9 @@ namespace ExportDataToExcel.Views
                     Name = Teckn10.SelectedItem.ToString(),
                     Poroda = Poroda10.Text,
                     WorkPlace = Place10.Text,
-                    Mashines = mashines10
+                    Mashines = mashines10,
+                    Comment = comment10.Text
+
                 };
                 model.Tecn.Add(Tex10);
 

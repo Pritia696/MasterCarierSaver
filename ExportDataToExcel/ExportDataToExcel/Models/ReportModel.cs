@@ -20,6 +20,7 @@ namespace ExportDataToExcel.Models
         public string WorkPlace { get; set; }
         public bool IsWorking { get; set; }
         public List<Mashine> Mashines { get; set; }
+        public string Comment { get; set; }
     }
 
     public class Mashine

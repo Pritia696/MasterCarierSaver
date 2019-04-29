@@ -174,7 +174,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment1"></Editor>
 
 
                 <Grid>
@@ -226,7 +226,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow2"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment2"></Editor>
 
 
                 <Grid>
@@ -279,7 +279,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow3"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment3"></Editor>
 
 
 
@@ -333,7 +333,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow4"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment4"></Editor>
 
 
 
@@ -389,7 +389,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow5"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment5"></Editor>
 
 
 
@@ -445,7 +445,7 @@
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow6"/>
 
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment6"></Editor>
 
 
 
@@ -484,7 +484,7 @@
                     <Switch x:Name="Check7" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
-                <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
+                <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center" x:Name="comment7"/>
 
 
                 <Grid x:Name="Grid8">
@@ -554,7 +554,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow8"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment8"></Editor>
 
 
                 <Grid>
@@ -607,7 +607,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow9"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment9"></Editor>
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -659,7 +659,7 @@
                 </Grid>
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow10"/>
-                <Editor Placeholder="Комментарий" AutoSize="TextChanges"></Editor>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment10"></Editor>
 
                 <Button Text="Сохранить" Clicked="SavePhone" />
             </StackLayout>
