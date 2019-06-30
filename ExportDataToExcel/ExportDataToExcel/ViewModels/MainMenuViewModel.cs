@@ -38,9 +38,9 @@ namespace ExportDataToExcel.ViewModels
             return Regex.Replace(txt, r, "", RegexOptions.Compiled);
         }
 
-        public async System.Threading.Tasks.Task ExportDataToExcelAsync( ReportModel model)
+        public async System.Threading.Tasks.Task ExportDataToExcelAsync(ReportModel model)
         {
-           
+
             // Granted storage permission
             var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
 
@@ -52,7 +52,7 @@ namespace ExportDataToExcel.ViewModels
 
             try
             {
-                var path = DependencyService.Get<IExportFilesToLocation>().GetFolderLocation() + "Report" + model.WorkTime.Substring(0,8) + ".xlsx";
+                var path = DependencyService.Get<IExportFilesToLocation>().GetFolderLocation() + "Report" + model.WorkTime.Substring(0, 8) + ".xlsx";
                 FilePath = ReplaceHexadecimalSymbols(path);
                 using (SpreadsheetDocument document = SpreadsheetDocument.Create(path, SpreadsheetDocumentType.Workbook))
                 {
@@ -90,24 +90,14 @@ namespace ExportDataToExcel.ViewModels
 
                     SheetData sheetData = worksheetPart.Worksheet.AppendChild(new SheetData());
 
-                          
+
 
                     Row row = new Row { RowIndex = 3 };
                     sheetData.Append(row);
 
 
-                    InsertCell(model.WorkTime, CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("Мастер:", CellValues.String, 13, row);
-                    InsertCell("", CellValues.String, 1, row);
-                    InsertCell("", CellValues.String, 1, row);
+                    InsertCell(model.WorkTime, CellValues.String, 1, row);                                       
+                    InsertCell("Мастер:", CellValues.String, 13, row);                    
                     InsertCell(model.MasterName, CellValues.String, 15, row);
 
                     row = new Row { RowIndex = 5 };
@@ -149,7 +139,7 @@ namespace ExportDataToExcel.ViewModels
                     foreach (var t in model.Tecn)
                     {
                         InsertCell(t.WorkPlace, CellValues.String, 1, row);
-                                                InsertCell("", CellValues.String, 1, row);
+                        InsertCell("", CellValues.String, 1, row);
 
                     }
                     UInt32Value i = 9;
@@ -157,15 +147,15 @@ namespace ExportDataToExcel.ViewModels
                     foreach (var car in cars)
                     {
                         var listmash = new List<Mashine>();
-
+                        var lm = 0;
                         row = new Row { RowIndex = i };
                         sheetData.Append(row);
                         InsertCell(car, CellValues.String, 1, row);
                         foreach (var tex in model.Tecn)
                         {
-                           if (tex.Mashines!= null)
+                            if (tex.Mashines != null)
                             {
-                              var mashin = tex.Mashines.Where(x => x.Name == car).FirstOrDefault();
+                                var mashin = tex.Mashines.Where(x => x.Name == car).FirstOrDefault();
                                 if (mashin != null)
                                 {
                                     listmash.Add(mashin);
@@ -177,54 +167,85 @@ namespace ExportDataToExcel.ViewModels
                         {
                             var fmash = listmash.First();
                             InsertCell(fmash.DriverMName, CellValues.String, 1, row);
-                            var texmins = listmash.Select(x => x.TechMins).ToList();
+                            var texmins = listmash.Select(x => x.TechMins.First()).ToList();
+
                             foreach (var tex2 in texmins)
                             {
-                                foreach (var tt in tex2)
+
+                                for (var rrr = 1; rrr <= model.Tecn.Count(); rrr++)
                                 {
-                                    for (var rrr = 1; rrr < 10; rrr++)
+                                    if (rrr + lm <= tex2.Index)
                                     {
-                                        if (rrr == tt.Index)
-                                        { 
-                                            InsertCell(listmash[rrr - 1].Reis, CellValues.String, 1, row);
-                                            InsertCell(listmash[rrr - 1].Plecho, CellValues.String, 1, row);
+                                        if (rrr + lm == tex2.Index)
+                                        {
+
+                                            var mashnow = listmash.Where(x => x.TechMins.Contains(tex2)).FirstOrDefault();
+                                            InsertCell(mashnow.Reis, CellValues.String, 1, row);
+                                            InsertCell(mashnow.Plecho, CellValues.String, 1, row);
+                                            lm++;
                                         }
-                                        //else
-                                        //{
-                                        //    InsertCell("", CellValues.String, 1, row);
-                                        //    InsertCell("", CellValues.String, 1, row);
-                                        //}
+                                        else
+                                        {
+                                            InsertCell("", CellValues.String, 1, row);
+                                            InsertCell("", CellValues.String, 1, row);
+                                        }
                                     }
+
                                 }
                             }
-
                         }
 
                         i++;
-                    }
 
+                    }
                     //комментарий 
                     row = new Row { RowIndex = i };
+                    sheetData.Append(row);
                     InsertCell("Комментарий", CellValues.String, 1, row);
+                    InsertCell("", CellValues.String, 1, row);
                     foreach (var texnic in model.Tecn)
                     {
-                        if(!String.IsNullOrEmpty( texnic.Comment) )
+                        if (!String.IsNullOrEmpty(texnic.Comment))
                         {
                             InsertCell(texnic.Comment, CellValues.String, 1, row);
+                            InsertCell("", CellValues.String, 1, row);
                         }
                         else
                         {
                             InsertCell("", CellValues.String, 1, row);
+                            InsertCell("", CellValues.String, 1, row);
                         }
 
                     }
-                    
+                    row = new Row { RowIndex = i };
+                    sheetData.Append(row);
+                    i++;
+                    row = new Row { RowIndex = i };
+                    sheetData.Append(row);
+                    i++;
+                    InsertCell("Техника", CellValues.String, 1, row);
+                    InsertCell("Водитель", CellValues.String, 1, row);
+                    InsertCell("Выполняемая работа", CellValues.String, 1, row);
+                    InsertCell("Комментарий", CellValues.String, 1, row);
+                    foreach (var texnicplus in model.TecnPlus)
+                    {
+                        row = new Row { RowIndex = i };
+                        sheetData.Append(row);
+                        InsertCell(texnicplus.Name, CellValues.String, 1, row);
+                        InsertCell(texnicplus.DriverName, CellValues.String, 1, row);
+                        InsertCell(texnicplus.Work, CellValues.String, 1, row);
+                        InsertCell(texnicplus.Comment, CellValues.String, 1, row);
+                        i++;
+                    }
 
-                    worksheetPart.Worksheet.Save();
+                        worksheetPart.Worksheet.Save();
                     MessagingCenter.Send(this, "DataExportedSuccessfully");
+
                 }
 
             }
+
+
             catch (Exception e)
             {
                 Debug.WriteLine("ERROR: " + e.Message);

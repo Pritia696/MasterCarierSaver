@@ -10,6 +10,7 @@ namespace ExportDataToExcel.Models
         public string Date { get; set; }
         public string MasterName { get; set; }
         public List<Technique> Tecn { get; set; }
+        public List<TechniquePlus> TecnPlus { get; set; }
     }
     public class Technique
     {
@@ -21,6 +22,13 @@ namespace ExportDataToExcel.Models
         public bool IsWorking { get; set; }
         public List<Mashine> Mashines { get; set; }
         public string Comment { get; set; }
+    }
+    public class TechniquePlus
+    {
+        public string Name { get; set; }
+        public string DriverName { get; set; }
+        public string Comment { get; set; }
+        public string Work { get; set; }
     }
 
     public class Mashine
