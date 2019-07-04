@@ -11,6 +11,7 @@ namespace ExportDataToExcel
     {
         public MainPage()
         {
+            Application.Current.MainPage.BackgroundColor = Color.Green;
             InitializeComponent();
         }
     }

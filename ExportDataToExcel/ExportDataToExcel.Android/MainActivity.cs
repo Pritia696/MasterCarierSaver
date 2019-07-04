@@ -15,7 +15,8 @@ namespace ExportDataToExcel.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
+            Window.SetStatusBarColor(Android.Graphics.Color.DarkGreen);
+            Window.SetTitleColor(Android.Graphics.Color.DarkGreen);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             Forms.Init(this, bundle);
             LoadApplication(new App());

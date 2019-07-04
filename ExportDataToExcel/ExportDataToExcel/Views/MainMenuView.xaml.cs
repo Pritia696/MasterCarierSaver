@@ -68,18 +68,23 @@ namespace ExportDataToExcel.Views
             var mashines9 = GetMashines(Grid10);
             var mashines10 = GetMashines(Grid11);
             model.Tecn = new List<Technique>();
-            if (Teckn1.SelectedItem != null)
+            if (Teckn1.SelectedItem != null )
+                
             //записываем первую технику 
             {
-                foreach(var mas in mashines1)
+                if (Teckn1.SelectedItem.ToString() != "Удалить")
+                {
+
+               
+                foreach (var mas in mashines1)
                 {
                     mas.TechMins = new List<TechMin>();
 
                       var m = new TechMin
                     {
                         Name = Teckn1.SelectedItem.ToString(),
-                        Index = 1
-                    };
+                        Index = model.Tecn.Count() + 1
+                      };
                     mas.TechMins.Add(m);
                 }
 
@@ -94,251 +99,328 @@ namespace ExportDataToExcel.Views
                     Comment = comment1.Text
                 };
                 model.Tecn.Add(Tex1);
+                }
+                
             }
 
             if (Teckn2.SelectedItem != null)
             {
-                foreach (var mas in mashines2)
+                if (Teckn2.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-
-                    var m = new TechMin
+                    foreach (var mas in mashines2)
                     {
+                        mas.TechMins = new List<TechMin>();
+
+                        var m = new TechMin
+                        {
+                            Name = Teckn2.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex2 = new Technique
+                    {
+                        Id = 2,
+                        DriverName = Fam2.Text,
                         Name = Teckn2.SelectedItem.ToString(),
-                        Index = 2
+                        Poroda = Poroda2.Text,
+                        WorkPlace = Place2.Text,
+                        Mashines = mashines2,
+                        Comment = comment2.Text
+
                     };
-                    mas.TechMins.Add(m);
+                    model.Tecn.Add(Tex2);
                 }
-                var Tex2 = new Technique
-                {
-                    Id = 2,
-                    DriverName = Fam2.Text,
-                    Name = Teckn2.SelectedItem.ToString(),
-                    Poroda = Poroda2.Text,
-                    WorkPlace = Place2.Text,
-                    Mashines = mashines2,
-                    Comment = comment2.Text
-
-                };
-                model.Tecn.Add(Tex2);
-
             }
 
             if (Teckn3.SelectedItem != null)
             {
-                foreach (var mas in mashines3)
+                if (Teckn3.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-
-                    var m = new TechMin
+                    foreach (var mas in mashines3)
                     {
-                        Name = Teckn3.SelectedItem.ToString(),
-                        Index = 3
-                    };
-                    mas.TechMins.Add(m);
-                }
-                var Tex3 = new Technique
-                {
-                    Id = 3,
-                    DriverName = Fam3.Text,
-                    Name = Teckn3.SelectedItem.ToString(),
-                    Poroda = Poroda3.Text,
-                    WorkPlace = Place3.Text,
-                    Mashines = mashines3,
-                    Comment = comment3.Text
+                        mas.TechMins = new List<TechMin>();
 
-                };
-                model.Tecn.Add(Tex3);
+                        var m = new TechMin
+                        {
+                            Name = Teckn3.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex3 = new Technique
+                    {
+                        Id = 3,
+                        DriverName = Fam3.Text,
+                        Name = Teckn3.SelectedItem.ToString(),
+                        Poroda = Poroda3.Text,
+                        WorkPlace = Place3.Text,
+                        Mashines = mashines3,
+                        Comment = comment3.Text
+
+                    };
+                    model.Tecn.Add(Tex3);
+                }
 
             }
             if (Teckn4.SelectedItem != null)
             {
-
-                foreach (var mas in mashines4)
+                if (Teckn4.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-                    var m = new TechMin
+                    foreach (var mas in mashines4)
                     {
+                        mas.TechMins = new List<TechMin>();
+                        var m = new TechMin
+                        {
+                            Name = Teckn4.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex4 = new Technique
+                    {
+                        Id = 4,
+                        DriverName = Fam4.Text,
                         Name = Teckn4.SelectedItem.ToString(),
-                        Index = 4
+                        Poroda = Poroda4.Text,
+                        WorkPlace = Place4.Text,
+                        Mashines = mashines4,
+                        Comment = comment4.Text
+
                     };
-                    mas.TechMins.Add(m);
+                    model.Tecn.Add(Tex4);
                 }
-                var Tex4 = new Technique
-                {
-                    Id = 4,
-                    DriverName = Fam4.Text,
-                    Name = Teckn4.SelectedItem.ToString(),
-                    Poroda = Poroda4.Text,
-                    WorkPlace = Place4.Text,
-                    Mashines = mashines4,
-                    Comment = comment4.Text
-
-                };
-                model.Tecn.Add(Tex4);
-
             }
 
             if (Teckn5.SelectedItem != null)
             {
-                foreach (var mas in mashines5)
+                if (Teckn5.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-                    var m = new TechMin
+                    foreach (var mas in mashines5)
                     {
+                        mas.TechMins = new List<TechMin>();
+                        var m = new TechMin
+                        {
+                            Name = Teckn5.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex5 = new Technique
+                    {
+                        Id = 5,
+                        DriverName = Fam5.Text,
                         Name = Teckn5.SelectedItem.ToString(),
-                        Index = 5
+                        Poroda = Poroda5.Text,
+                        WorkPlace = Place5.Text,
+                        Mashines = mashines5,
+                        Comment = comment5.Text
+
                     };
-                    mas.TechMins.Add(m);
+                    model.Tecn.Add(Tex5);
                 }
-                var Tex5 = new Technique
-                {
-                    Id = 5,
-                    DriverName = Fam5.Text,
-                    Name = Teckn5.SelectedItem.ToString(),
-                    Poroda = Poroda5.Text,
-                    WorkPlace = Place5.Text,
-                    Mashines = mashines5,
-                    Comment = comment5.Text
-
-                };
-                model.Tecn.Add(Tex5);
-
             }
             if (Teckn6.SelectedItem != null)
             {
-                foreach (var mas in mashines6)
+                if (Teckn6.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-                    var m = new TechMin
+                    foreach (var mas in mashines6)
                     {
+                        mas.TechMins = new List<TechMin>();
+                        var m = new TechMin
+                        {
+                            Name = Teckn6.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex6 = new Technique
+                    {
+                        Id = 6,
+                        DriverName = Fam6.Text,
                         Name = Teckn6.SelectedItem.ToString(),
-                        Index = 6
-                    };
-                    mas.TechMins.Add(m);
-                }
-                var Tex6 = new Technique
-                {
-                    Id = 6,
-                    DriverName = Fam6.Text,
-                    Name = Teckn6.SelectedItem.ToString(),
-                    Poroda = Poroda6.Text,
-                    WorkPlace = Place6.Text,
-                    Mashines = mashines6,
-                    Comment = comment6.Text
+                        Poroda = Poroda6.Text,
+                        WorkPlace = Place6.Text,
+                        Mashines = mashines6,
+                        Comment = comment6.Text
 
-                };
-                model.Tecn.Add(Tex6);
+                    };
+                    model.Tecn.Add(Tex6);
+                }
 
             }
 
             if (Teckn7.SelectedItem != null)
             {
-                foreach (var mas in mashines7)
+                if (Teckn7.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-                    var m = new TechMin
+                    foreach (var mas in mashines7)
                     {
+                        mas.TechMins = new List<TechMin>();
+                        var m = new TechMin
+                        {
+                            Name = Teckn7.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex7 = new Technique
+                    {
+                        Id = 7,
+                        DriverName = Fam7.Text,
                         Name = Teckn7.SelectedItem.ToString(),
-                        Index = 7
+                        Poroda = Poroda7.Text,
+                        WorkPlace = Place7.Text,
+                        Mashines = mashines7,
+                        Comment = comment7.Text
+
                     };
-                    mas.TechMins.Add(m);
+                    model.Tecn.Add(Tex7);
                 }
-                var Tex7 = new Technique
-                {
-                    Id = 7,
-                    DriverName = Fam7.Text,
-                    Name = Teckn7.SelectedItem.ToString(),
-                    Poroda = Poroda7.Text,
-                    WorkPlace = Place7.Text,
-                    Mashines = mashines7,
-                    Comment = comment7.Text
-
-                };
-                model.Tecn.Add(Tex7);
-
             }
 
             if (Teckn8.SelectedItem != null)
             {
-                foreach (var mas in mashines8)
+                if (Teckn8.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-                    var m = new TechMin
+                    foreach (var mas in mashines8)
                     {
+                        mas.TechMins = new List<TechMin>();
+                        var m = new TechMin
+                        {
+                            Name = Teckn8.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex8 = new Technique
+                    {
+                        Id = 8,
+                        DriverName = Fam8.Text,
                         Name = Teckn8.SelectedItem.ToString(),
-                        Index = 8
-                    };
-                    mas.TechMins.Add(m);
-                }
-                var Tex8 = new Technique
-                {
-                    Id = 8,
-                    DriverName = Fam8.Text,
-                    Name = Teckn8.SelectedItem.ToString(),
-                    Poroda = Poroda8.Text,
-                    WorkPlace = Place8.Text,
-                    Mashines = mashines8,
-                    Comment = comment8.Text
+                        Poroda = Poroda8.Text,
+                        WorkPlace = Place8.Text,
+                        Mashines = mashines8,
+                        Comment = comment8.Text
 
-                };
-                model.Tecn.Add(Tex8);
+                    };
+                    model.Tecn.Add(Tex8);
+                }
 
             }
             if (Teckn9.SelectedItem != null)
             {
-                foreach (var mas in mashines9)
+                if (Teckn9.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-                    var m = new TechMin
+                    foreach (var mas in mashines9)
                     {
+                        mas.TechMins = new List<TechMin>();
+                        var m = new TechMin
+                        {
+                            Name = Teckn9.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex9 = new Technique
+                    {
+                        Id = 9,
+                        DriverName = Fam9.Text,
                         Name = Teckn9.SelectedItem.ToString(),
-                        Index = 9
+                        Poroda = Poroda9.Text,
+                        WorkPlace = Place9.Text,
+                        Mashines = mashines9,
+                        Comment = comment9.Text
+
                     };
-                    mas.TechMins.Add(m);
+                    model.Tecn.Add(Tex9);
                 }
-                var Tex9 = new Technique
-                {
-                    Id = 9,
-                    DriverName = Fam9.Text,
-                    Name = Teckn9.SelectedItem.ToString(),
-                    Poroda = Poroda9.Text,
-                    WorkPlace = Place9.Text,
-                    Mashines = mashines9,
-                    Comment = comment9.Text
-
-                };
-                model.Tecn.Add(Tex9);
-
             }
             if (Teckn10.SelectedItem != null)
             {
-                foreach (var mas in mashines10)
+                if (Teckn10.SelectedItem.ToString() != "Удалить")
                 {
-                    mas.TechMins = new List<TechMin>();
-                    var m = new TechMin
+                    foreach (var mas in mashines10)
                     {
+                        mas.TechMins = new List<TechMin>();
+                        var m = new TechMin
+                        {
+                            Name = Teckn10.SelectedItem.ToString(),
+                            Index = model.Tecn.Count() + 1,
+                        };
+                        mas.TechMins.Add(m);
+                    }
+                    var Tex10 = new Technique
+                    {
+                        Id = 10,
+                        DriverName = "",
                         Name = Teckn10.SelectedItem.ToString(),
-                        Index = 10
-                    };
-                    mas.TechMins.Add(m);
-                }
-                var Tex10 = new Technique
-                {
-                    Id = 10,
-                    DriverName = Fam10.Text,
-                    Name = Teckn10.SelectedItem.ToString(),
-                    Poroda = Poroda10.Text,
-                    WorkPlace = Place10.Text,
-                    Mashines = mashines10,
-                    Comment = comment10.Text
+                        Poroda = Poroda10.Text,
+                        WorkPlace = "",
+                        Mashines = mashines10,
+                        Comment = comment10.Text
 
-                };
-                model.Tecn.Add(Tex10);
+                    };
+                    model.Tecn.Add(Tex10);
+                }
 
             }
-
-
+            model.TecnPlus = new List<TechniquePlus>();
+            if (!String.IsNullOrEmpty(TexPlus1.Text))
+            {
+                var texPlus1 = new TechniquePlus
+                {
+                    Name = TexPlus1.Text,
+                    DriverName= DriverPlus1.Text,
+                    Work= WorkPlus1.Text,
+                    Comment= comment11.Text
+                };
+                model.TecnPlus.Add(texPlus1);
+            }
+            if (!String.IsNullOrEmpty(TexPlus2.Text))
+            {
+                var texPlus2 = new TechniquePlus
+                {
+                    Name = TexPlus2.Text,
+                    DriverName = DriverPlus2.Text,
+                    Work = WorkPlus2.Text,
+                    Comment = comment12.Text
+                };
+                model.TecnPlus.Add(texPlus2);
+            }
+            if (!String.IsNullOrEmpty(TexPlus3.Text))
+            {
+                var texPlus3 = new TechniquePlus
+                {
+                    Name = TexPlus3.Text,
+                    DriverName = DriverPlus3.Text,
+                    Work = WorkPlus3.Text,
+                    Comment = comment13.Text
+                };
+                model.TecnPlus.Add(texPlus3);
+            }
+            if (!String.IsNullOrEmpty(TexPlus4.Text))
+            {
+                var texPlus4 = new TechniquePlus
+                {
+                    Name = TexPlus4.Text,
+                    DriverName = DriverPlus4.Text,
+                    Work = WorkPlus4.Text,
+                    Comment = comment14.Text
+                };
+                model.TecnPlus.Add(texPlus4);
+            }
+            if (!String.IsNullOrEmpty(TexPlus5.Text))
+            {
+                var texPlus5 = new TechniquePlus
+                {
+                    Name = TexPlus5.Text,
+                    DriverName = DriverPlus5.Text,
+                    Work = WorkPlus5.Text,
+                    Comment = comment15.Text
+                };
+                model.TecnPlus.Add(texPlus5);
+            }
 
             return model;
         }

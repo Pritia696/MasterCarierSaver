@@ -147,6 +147,7 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam1" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -201,6 +202,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam2" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -253,6 +256,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam3" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -306,6 +311,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam4" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -361,6 +368,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam5" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -415,6 +424,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam6" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -469,6 +480,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam7" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -523,6 +536,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam8" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -575,6 +590,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
                     <Entry x:Name="Fam9" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
@@ -598,14 +615,14 @@
                 <Button Text="+" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start"
                     Clicked="AddRow9"/>
                 <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment9"></Editor>
-
+                <BoxView Color="Gray" WidthRequest="1" HeightRequest="2"/>
+                <Label Text="Отходы" FontSize="Large" HorizontalTextAlignment="Center"/>
+                <BoxView Color="Gray" WidthRequest="1" HeightRequest="2"/>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="30"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>                        
                         <ColumnDefinition Width="50"></ColumnDefinition>
                         <ColumnDefinition Width="30"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
@@ -618,19 +635,12 @@
 
                     <Picker x:Name="Teckn10" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
-                            <x:String>CAT 374 (21-29)</x:String>
-                            <x:String>Liebherr 966 (03-91)</x:String>
-                            <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>ДСФ ГБ</x:String>
+                            <x:String>Удалить</x:String>
+
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam10" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
-                    <Entry x:Name="Poroda10" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"  IsEnabled="false" Text="Отходы"></Entry>
-                    <Entry x:Name="Place10" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <Entry x:Name="Poroda10" Grid.Column="2" Grid.Row="1" Placeholder="Порода" FontSize="Small"  IsEnabled="false" Text="Отходы"></Entry>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -657,8 +667,8 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="30"></ColumnDefinition>
-                        <ColumnDefinition Width="100"></ColumnDefinition>
-                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="30"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
@@ -666,11 +676,89 @@
                         <RowDefinition Height="1"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Entry Grid.Column="1" Grid.Row="1" Placeholder="Техника" FontSize="Small"></Entry>
-                    <Entry Grid.Column="2" Grid.Row="1" Placeholder="Водитель" FontSize="Small"></Entry>
-                    <Entry Grid.Column="3" Grid.Row="1" Placeholder="Выполняемая работа" FontSize="Small"></Entry>
+                    <Entry Grid.Column="1" Grid.Row="1" Placeholder="Техника" FontSize="Small" x:Name="TexPlus1"></Entry>
+                    <Entry Grid.Column="2" Grid.Row="1" Placeholder="Водитель" FontSize="Small" x:Name="DriverPlus1" ></Entry>
+                    <Entry Grid.Column="3" Grid.Row="1" Placeholder="Выполняемая работа" FontSize="Small"  x:Name="WorkPlus1"></Entry>
 
                 </Grid>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment11"></Editor>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Entry Grid.Column="1" Grid.Row="1" Placeholder="Техника" FontSize="Small" x:Name="TexPlus2"></Entry>
+                    <Entry Grid.Column="2" Grid.Row="1" Placeholder="Водитель" FontSize="Small" x:Name="DriverPlus2"></Entry>
+                    <Entry Grid.Column="3" Grid.Row="1" Placeholder="Выполняемая работа" FontSize="Small"  x:Name="WorkPlus2"></Entry>
+
+                </Grid>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment12"></Editor>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Entry Grid.Column="1" Grid.Row="1" Placeholder="Техника" FontSize="Small" x:Name="TexPlus3"></Entry>
+                    <Entry Grid.Column="2" Grid.Row="1" Placeholder="Водитель" FontSize="Small" x:Name="DriverPlus3"></Entry>
+                    <Entry Grid.Column="3" Grid.Row="1" Placeholder="Выполняемая работа" FontSize="Small"  x:Name="WorkPlus3"></Entry>
+
+                </Grid>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment13"></Editor>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Entry Grid.Column="1" Grid.Row="1" Placeholder="Техника" FontSize="Small" x:Name="TexPlus4"></Entry>
+                    <Entry Grid.Column="2" Grid.Row="1" Placeholder="Водитель" FontSize="Small" x:Name="DriverPlus4"></Entry>
+                    <Entry Grid.Column="3" Grid.Row="1" Placeholder="Выполняемая работа" FontSize="Small"  x:Name="WorkPlus4"></Entry>
+
+                </Grid>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment14"></Editor>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="160"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Entry Grid.Column="1" Grid.Row="1" Placeholder="Техника" FontSize="Small" x:Name="TexPlus5"></Entry>
+                    <Entry Grid.Column="2" Grid.Row="1" Placeholder="Водитель" FontSize="Small" x:Name="DriverPlus5"></Entry>
+                    <Entry Grid.Column="3" Grid.Row="1" Placeholder="Выполняемая работа" FontSize="Small"  x:Name="WorkPlus5"></Entry>
+
+                </Grid>
+                <Editor Placeholder="Комментарий" AutoSize="TextChanges" x:Name="comment15"></Editor>
+
                 <Button Text="Сохранить" Clicked="SavePhone" />
             </StackLayout>
         </ScrollView>
