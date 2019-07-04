@@ -136,7 +136,6 @@
                     <Label  Text="Машинист" Grid.Row="0" Grid.Column="2"/>
                     <Label Text="Горная порода" Grid.Row="0" Grid.Column="3"/>
                     <Label Text="Место работы" Grid.Row="0" Grid.Column="4"/>
-                    <Label Text="Работал" Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2"/>
 
                     <Picker x:Name="Teckn1" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -153,7 +152,6 @@
                     <Entry x:Name="Fam1" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda1" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place1" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check1" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
 
                     <BoxView Color="Gray" WidthRequest="1" HeightRequest="1" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4"/>
 
@@ -208,7 +206,6 @@
                     <Entry x:Name="Fam2" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda2" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place2" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check2" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -261,7 +258,6 @@
                     <Entry x:Name="Fam3" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda3" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place3" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check3" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -315,7 +311,6 @@
                     <Entry x:Name="Fam4" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda4" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place4" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check4" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -371,7 +366,6 @@
                     <Entry x:Name="Fam5" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda5" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place5" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check5" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -426,7 +420,6 @@
                     <Entry x:Name="Fam6" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda6" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place6" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check6" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -481,7 +474,6 @@
                     <Entry x:Name="Fam7" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda7" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place7" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check7" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center" x:Name="comment7"/>
@@ -536,7 +528,6 @@
                     <Entry x:Name="Fam8" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda8" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place8" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check8" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -589,7 +580,6 @@
                     <Entry x:Name="Fam9" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda9" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
                     <Entry x:Name="Place9" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check9" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -641,7 +631,6 @@
                     <Entry x:Name="Fam10" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
                     <Entry x:Name="Poroda10" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"  IsEnabled="false" Text="Отходы"></Entry>
                     <Entry x:Name="Place10" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
-                    <Switch x:Name="Check10" Grid.Column="5" Grid.Row="1" OnColor="Green"></Switch>
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
