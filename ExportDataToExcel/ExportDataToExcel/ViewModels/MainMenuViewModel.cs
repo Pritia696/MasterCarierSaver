@@ -147,7 +147,7 @@ namespace ExportDataToExcel.ViewModels
                     foreach (var car in cars)
                     {
                         var listmash = new List<Mashine>();
-                        var lm = 0;
+                        
                         row = new Row { RowIndex = i };
                         sheetData.Append(row);
                         InsertCell(car, CellValues.String, 1, row);
@@ -168,29 +168,33 @@ namespace ExportDataToExcel.ViewModels
                             var fmash = listmash.First();
                             InsertCell(fmash.DriverMName, CellValues.String, 1, row);
                             var texmins = listmash.Select(x => x.TechMins.First()).ToList();
-
+                            var lm = 0;
+                            var lastindex = 0;
                             foreach (var tex2 in texmins)
-                            {
+                            {                           
+                                //TODO: переделать заполнение ошибкалогики
 
                                 for (var rrr = 1; rrr <= model.Tecn.Count(); rrr++)
-                                {
-                                    if (rrr + lm <= tex2.Index)
-                                    {
-                                        if (rrr + lm == tex2.Index)
+                                {                                   
+                                        if (rrr + lastindex <= tex2.Index)
                                         {
+                                            if (rrr + lastindex == tex2.Index)
+                                            {
 
-                                            var mashnow = listmash.Where(x => x.TechMins.Contains(tex2)).FirstOrDefault();
-                                            InsertCell(mashnow.Reis, CellValues.String, 1, row);
-                                            InsertCell(mashnow.Plecho, CellValues.String, 1, row);
-                                            lm++;
-                                        }
-                                        else
-                                        {
-                                            InsertCell("", CellValues.String, 1, row);
-                                            InsertCell("", CellValues.String, 1, row);
-                                        }
-                                    }
+                                                var mashnow = listmash.Where(x => x.TechMins.Contains(tex2)).FirstOrDefault();
+                                                InsertCell(mashnow.Reis, CellValues.String, 1, row);
+                                                InsertCell(mashnow.Plecho, CellValues.String, 1, row);
+                                                lm++;
+                                            lastindex = tex2.Index;
 
+
+                                            }
+                                            else
+                                            {
+                                                InsertCell("", CellValues.String, 1, row);
+                                                InsertCell("", CellValues.String, 1, row);
+                                            }
+                                        }
                                 }
                             }
                         }
