@@ -27,11 +27,17 @@ namespace ExportDataToExcel.Views
                 "Volvo A40F 74-01","Volvo A40F 74-02","Volvo A40E 66-29","Volvo A40E 66-30","Volvo A40E 66-31",
                 "Volvo A40G 42-75","Volvo A40G 42-76","Volvo A40G 42-77","BelAZ 75-40 650","BelAZ 75-40 61-36","Volvo A40G 49-22","Volvo A40G 49-23"
             };
-        List<String> technikDrivers = new List<String>
+        List<String> drivers = new List<String>
             {
-                "Balhoshin V.","Belishev A.","Belishev M.","Bubnov A.","Davidov V.","Dronov V.",
-                "Dubrovskyi  R.","Fomichev A.","Gorelov. Y","Kachinskas M.","Karatevskiy E.",
-                "Kirpichev S.","Korneev S.","Korotich A.","Mihaylov I.","Naumov S.","Shkolenko S.","Smirnov S.","Sokolov D.","Solovev V.","Steshenko V.","Tolstolutskiy N.","Uklyuev V."
+                "Aleshin A.","Antonov V.","Bahonov I.",
+                "Davidov N.","Eliseev D.","Ermakov A.","Ermolov A.","Ezhikov S.",
+                "Fedin A.","Fedorov S.","Filimonov A.","Hohlov V.","Isaev S.","Kabanov S.",
+                "Karpuhin Y.","Kashirskiy I.","Krasavtsev E.","Krestyanskiy V.","Lobanov D.","Mastykash E.",
+                "Nikitin I.E.","Nikitin R.V.","Nikulchev Y.","Novikov V.","Oskolkov V.","Panin V.",
+                "Pleshikov A.","Pletnev Y.","Podolskiy I.N.","Podolskiy I.S.","Polosuev A.","Polzikov N.",
+                "Rvantsev A.","Sergeev A.","Sidorkin A.","Sinitsin E.","Smolnyakov M.","Sorokin A.","Sverchkov A.",
+                "Sychev D.","Tsikunov E.","Ulzutuev Y.","Zadonskiy V.","Zhelanov I."
+
             };
         List<String> technik = new List<String>
             {
@@ -99,7 +105,7 @@ namespace ExportDataToExcel.Views
                     Id = 1,
                     DriverName = Fam1.SelectedItem.ToString(),
                     Name = Teckn1.SelectedItem.ToString(),
-                    Poroda = Poroda1.Text,
+                    Poroda = Poroda1.SelectedItem.ToString(),
                     WorkPlace = Place1.SelectedItem.ToString(),
                     Mashines = mashines1,
                     Comment = comment1.Text
@@ -129,7 +135,7 @@ namespace ExportDataToExcel.Views
                         Id = 2,
                         DriverName = Fam2.SelectedItem.ToString(),
                         Name = Teckn2.SelectedItem.ToString(),
-                        Poroda = Poroda2.Text,
+                        Poroda = Poroda2.SelectedItem.ToString(),
                         WorkPlace = Place2.SelectedItem.ToString(),
                         Mashines = mashines2,
                         Comment = comment2.Text
@@ -159,7 +165,7 @@ namespace ExportDataToExcel.Views
                         Id = 3,
                         DriverName = Fam3.SelectedItem.ToString(),
                         Name = Teckn3.SelectedItem.ToString(),
-                        Poroda = Poroda3.Text,
+                        Poroda = Poroda3.SelectedItem.ToString(),
                         WorkPlace = Place3.SelectedItem.ToString(),
                         Mashines = mashines3,
                         Comment = comment3.Text
@@ -188,7 +194,7 @@ namespace ExportDataToExcel.Views
                         Id = 4,
                         DriverName = Fam4.SelectedItem.ToString(),
                         Name = Teckn4.SelectedItem.ToString(),
-                        Poroda = Poroda4.Text,
+                        Poroda = Poroda4.SelectedItem.ToString(),
                         WorkPlace = Place4.SelectedItem.ToString(),
                         Mashines = mashines4,
                         Comment = comment4.Text
@@ -217,7 +223,7 @@ namespace ExportDataToExcel.Views
                         Id = 5,
                         DriverName = Fam5.SelectedItem.ToString(),
                         Name = Teckn5.SelectedItem.ToString(),
-                        Poroda = Poroda5.Text,
+                        Poroda = Poroda5.SelectedItem.ToString(),
                         WorkPlace = Place5.SelectedItem.ToString(),
                         Mashines = mashines5,
                         Comment = comment5.Text
@@ -245,7 +251,7 @@ namespace ExportDataToExcel.Views
                         Id = 6,
                         DriverName = Fam6.SelectedItem.ToString(),
                         Name = Teckn6.SelectedItem.ToString(),
-                        Poroda = Poroda6.Text,
+                        Poroda = Poroda6.SelectedItem.ToString(),
                         WorkPlace = Place6.SelectedItem.ToString(),
                         Mashines = mashines6,
                         Comment = comment6.Text
@@ -275,7 +281,7 @@ namespace ExportDataToExcel.Views
                         Id = 7,
                         DriverName = Fam7.SelectedItem.ToString(),
                         Name = Teckn7.SelectedItem.ToString(),
-                        Poroda = Poroda7.Text,
+                        Poroda = Poroda7.SelectedItem.ToString(),
                         WorkPlace = Place7.SelectedItem.ToString(),
                         Mashines = mashines7,
                         Comment = comment7.Text
@@ -304,7 +310,7 @@ namespace ExportDataToExcel.Views
                         Id = 8,
                         DriverName = Fam8.SelectedItem.ToString(),
                         Name = Teckn8.SelectedItem.ToString(),
-                        Poroda = Poroda8.Text,
+                        Poroda = Poroda8.SelectedItem.ToString(),
                         WorkPlace = Place8.SelectedItem.ToString(),
                         Mashines = mashines8,
                         Comment = comment8.Text
@@ -333,7 +339,7 @@ namespace ExportDataToExcel.Views
                         Id = 9,
                         DriverName = Fam9.SelectedItem.ToString(),
                         Name = Teckn9.SelectedItem.ToString(),
-                        Poroda = Poroda9.Text,
+                        Poroda = Poroda9.SelectedItem.ToString(),
                         WorkPlace = Place9.SelectedItem.ToString(),
                         Mashines = mashines9,
                         Comment = comment9.Text
@@ -486,7 +492,11 @@ namespace ExportDataToExcel.Views
             };
 
             picker1.ItemsSource = cars;
-            var draiver1 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver1 = new Picker
+            {
+            };
+            draiver1.ItemsSource = drivers;
+            //var draiver1 = new Entry { Placeholder = "Водитель", FontSize = 14 };
             var reis1 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl1 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -511,7 +521,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver2 = new Picker
+            {
+            };
+            draiver2.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -530,12 +543,15 @@ namespace ExportDataToExcel.Views
         public void AddRow3(object sender, EventArgs e)
         {
             Grid4.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-            var picker2 = new Picker
+            var picker3 = new Picker
             {
             };
 
-            picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            picker3.ItemsSource = cars;
+            var draiver3 = new Picker
+            {
+            };
+            draiver3.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -543,8 +559,8 @@ namespace ExportDataToExcel.Views
             butDel.AutomationId = "del3";
             Grid.SetColumn(butDel, 5);
             Grid.SetRow(butDel, t3);
-            Grid4.Children.Add(picker2, 1, t3);
-            Grid4.Children.Add(draiver2, 2, t3);
+            Grid4.Children.Add(picker3, 1, t3);
+            Grid4.Children.Add(draiver3, 2, t3);
             Grid4.Children.Add(reis2, 3, t3);
             Grid4.Children.Add(pl2, 4, t3);
             Grid4.Children.Add(butDel, 5, t3);
@@ -559,7 +575,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver3 = new Picker
+            {
+            };
+            draiver3.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -568,7 +587,7 @@ namespace ExportDataToExcel.Views
             Grid.SetColumn(butDel, 5);
             Grid.SetRow(butDel, t4);
             Grid5.Children.Add(picker2, 1, t4);
-            Grid5.Children.Add(draiver2, 2, t4);
+            Grid5.Children.Add(draiver3, 2, t4);
             Grid5.Children.Add(reis2, 3, t4);
             Grid5.Children.Add(pl2, 4, t4);
             Grid5.Children.Add(butDel, 5, t4);
@@ -583,7 +602,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver2 = new Picker
+            {
+            };
+            draiver2.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -607,7 +629,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver2 = new Picker
+            {
+            };
+            draiver2.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -631,7 +656,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver2 = new Picker
+            {
+            };
+            draiver2.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -655,7 +683,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver2 = new Picker
+            {
+            };
+            draiver2.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -679,7 +710,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver2 = new Picker
+            {
+            };
+            draiver2.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };
@@ -703,7 +737,10 @@ namespace ExportDataToExcel.Views
             };
 
             picker2.ItemsSource = cars;
-            var draiver2 = new Entry { Placeholder = "Водитель", FontSize = 14 };
+            var draiver2 = new Picker
+            {
+            };
+            draiver2.ItemsSource = drivers;
             var reis2 = new Entry { Placeholder = "Рейсы", FontSize = 14 };
             var pl2 = new Entry { Placeholder = "Плечо", FontSize = 14 };
             var butDel = new Button { Text = "-" };

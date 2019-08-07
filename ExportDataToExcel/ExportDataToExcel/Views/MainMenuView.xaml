@@ -190,7 +190,24 @@
                     </Picker>
 
 
-                    <Entry x:Name="Poroda1" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda1" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda1" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>                          
+                          
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place1" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
 
                     <Picker x:Name="Place1" Grid.Column="4" Grid.Row="1" FontSize="Small">
@@ -301,7 +318,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda2" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda2" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda2" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place2" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place2" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -410,7 +444,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda3" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda3" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda3" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place3" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place3" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -520,7 +571,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda4" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda4" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda4" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place4" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place4" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -632,7 +700,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda5" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda5" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda5" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place5" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place5" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -743,7 +828,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda6" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda6" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda6" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place6" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place6" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -854,7 +956,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda7" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda7" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda7" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place7" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place7" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -965,7 +1084,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda8" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda8" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda8" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place8" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place8" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
@@ -1074,7 +1210,24 @@
                             <x:String>Uklyuev V.</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Poroda9" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Poroda9" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Poroda9" Grid.Column="3" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Limestone GB</x:String>
+                            <x:String>Limestone TC</x:String>
+                            <x:String>Overburden</x:String>
+                            <x:String>Black clay</x:String>
+                            <x:String>Quat clay</x:String>
+                            <x:String>Red clay</x:String>
+                            <x:String>Crash</x:String>
+                            <x:String>Crash Sand</x:String>
+                            <x:String>Rock</x:String>
+                            <x:String>Crushed stone</x:String>
+                            <x:String>Crushed stone flus 40-70</x:String>
+                            <x:String>Return</x:String>
+
+                        </Picker.Items>
+                    </Picker>
                     <!--<Entry x:Name="Place9" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
                     <Picker x:Name="Place9" Grid.Column="4" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
