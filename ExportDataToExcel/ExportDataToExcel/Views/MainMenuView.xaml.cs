@@ -27,6 +27,12 @@ namespace ExportDataToExcel.Views
                 "Volvo A40F 74-01","Volvo A40F 74-02","Volvo A40E 66-29","Volvo A40E 66-30","Volvo A40E 66-31",
                 "Volvo A40G 42-75","Volvo A40G 42-76","Volvo A40G 42-77","BelAZ 75-40 650","BelAZ 75-40 61-36","Volvo A40G 49-22","Volvo A40G 49-23"
             };
+        List<String> technikDrivers = new List<String>
+            {
+                "Balhoshin V.","Belishev A.","Belishev M.","Bubnov A.","Davidov V.","Dronov V.",
+                "Dubrovskyi  R.","Fomichev A.","Gorelov. Y","Kachinskas M.","Karatevskiy E.",
+                "Kirpichev S.","Korneev S.","Korotich A.","Mihaylov I.","Naumov S.","Shkolenko S.","Smirnov S.","Sokolov D.","Solovev V.","Steshenko V.","Tolstolutskiy N.","Uklyuev V."
+            };
         List<String> technik = new List<String>
             {
                 "Volvo EC480(42-18)"," CAT 374 (19-89)","CAT 374 (21-29)"," Liebherr 966 (03-91)",
@@ -54,7 +60,7 @@ namespace ExportDataToExcel.Views
             model.Date = String.Format("{0}.{1}.{2}", date.SelectedItem, mounth.SelectedItem, year.SelectedItem);
             if (picker.SelectedItem != null)
             { model.WorkTime = picker.SelectedItem.ToString(); }
-            model.MasterName = Family.Text;
+            model.MasterName = Family.SelectedItem.ToString();
             //считаем машины для первой техники
             
             var mashines1 = GetMashines(Grid2);
@@ -91,10 +97,10 @@ namespace ExportDataToExcel.Views
                 var Tex1 = new Technique
                 {
                     Id = 1,
-                    DriverName = Fam1.Text,
+                    DriverName = Fam1.SelectedItem.ToString(),
                     Name = Teckn1.SelectedItem.ToString(),
                     Poroda = Poroda1.Text,
-                    WorkPlace = Place1.Text,
+                    WorkPlace = Place1.SelectedItem.ToString(),
                     Mashines = mashines1,
                     Comment = comment1.Text
                 };
@@ -121,10 +127,10 @@ namespace ExportDataToExcel.Views
                     var Tex2 = new Technique
                     {
                         Id = 2,
-                        DriverName = Fam2.Text,
+                        DriverName = Fam2.SelectedItem.ToString(),
                         Name = Teckn2.SelectedItem.ToString(),
                         Poroda = Poroda2.Text,
-                        WorkPlace = Place2.Text,
+                        WorkPlace = Place2.SelectedItem.ToString(),
                         Mashines = mashines2,
                         Comment = comment2.Text
 
@@ -151,10 +157,10 @@ namespace ExportDataToExcel.Views
                     var Tex3 = new Technique
                     {
                         Id = 3,
-                        DriverName = Fam3.Text,
+                        DriverName = Fam3.SelectedItem.ToString(),
                         Name = Teckn3.SelectedItem.ToString(),
                         Poroda = Poroda3.Text,
-                        WorkPlace = Place3.Text,
+                        WorkPlace = Place3.SelectedItem.ToString(),
                         Mashines = mashines3,
                         Comment = comment3.Text
 
@@ -180,10 +186,10 @@ namespace ExportDataToExcel.Views
                     var Tex4 = new Technique
                     {
                         Id = 4,
-                        DriverName = Fam4.Text,
+                        DriverName = Fam4.SelectedItem.ToString(),
                         Name = Teckn4.SelectedItem.ToString(),
                         Poroda = Poroda4.Text,
-                        WorkPlace = Place4.Text,
+                        WorkPlace = Place4.SelectedItem.ToString(),
                         Mashines = mashines4,
                         Comment = comment4.Text
 
@@ -209,10 +215,10 @@ namespace ExportDataToExcel.Views
                     var Tex5 = new Technique
                     {
                         Id = 5,
-                        DriverName = Fam5.Text,
+                        DriverName = Fam5.SelectedItem.ToString(),
                         Name = Teckn5.SelectedItem.ToString(),
                         Poroda = Poroda5.Text,
-                        WorkPlace = Place5.Text,
+                        WorkPlace = Place5.SelectedItem.ToString(),
                         Mashines = mashines5,
                         Comment = comment5.Text
 
@@ -237,10 +243,10 @@ namespace ExportDataToExcel.Views
                     var Tex6 = new Technique
                     {
                         Id = 6,
-                        DriverName = Fam6.Text,
+                        DriverName = Fam6.SelectedItem.ToString(),
                         Name = Teckn6.SelectedItem.ToString(),
                         Poroda = Poroda6.Text,
-                        WorkPlace = Place6.Text,
+                        WorkPlace = Place6.SelectedItem.ToString(),
                         Mashines = mashines6,
                         Comment = comment6.Text
 
@@ -267,10 +273,10 @@ namespace ExportDataToExcel.Views
                     var Tex7 = new Technique
                     {
                         Id = 7,
-                        DriverName = Fam7.Text,
+                        DriverName = Fam7.SelectedItem.ToString(),
                         Name = Teckn7.SelectedItem.ToString(),
                         Poroda = Poroda7.Text,
-                        WorkPlace = Place7.Text,
+                        WorkPlace = Place7.SelectedItem.ToString(),
                         Mashines = mashines7,
                         Comment = comment7.Text
 
@@ -296,10 +302,10 @@ namespace ExportDataToExcel.Views
                     var Tex8 = new Technique
                     {
                         Id = 8,
-                        DriverName = Fam8.Text,
+                        DriverName = Fam8.SelectedItem.ToString(),
                         Name = Teckn8.SelectedItem.ToString(),
                         Poroda = Poroda8.Text,
-                        WorkPlace = Place8.Text,
+                        WorkPlace = Place8.SelectedItem.ToString(),
                         Mashines = mashines8,
                         Comment = comment8.Text
 
@@ -325,10 +331,10 @@ namespace ExportDataToExcel.Views
                     var Tex9 = new Technique
                     {
                         Id = 9,
-                        DriverName = Fam9.Text,
+                        DriverName = Fam9.SelectedItem.ToString(),
                         Name = Teckn9.SelectedItem.ToString(),
                         Poroda = Poroda9.Text,
-                        WorkPlace = Place9.Text,
+                        WorkPlace = Place9.SelectedItem.ToString(),
                         Mashines = mashines9,
                         Comment = comment9.Text
 

@@ -3,7 +3,7 @@
     x:Class="ExportDataToExcel.Views.MainMenuView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-   Title="Отчетность мастеров">
+   Title="Shift Report">
 
 
     <!--<ContentPage.ToolbarItems>
@@ -108,7 +108,16 @@
                     </Picker>
 
                     <Label Text="ФИО" Grid.Column="1" Grid.Row="1" FontSize="Large"/>
-                    <Entry x:Name="Family" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4"></Entry>
+                    <!--<Entry x:Name="Family" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4"></Entry>-->
+
+                    <Picker x:Name="Family"  Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4">
+                        <Picker.Items>
+                            <x:String>Filimonov S.N.</x:String>
+                            <x:String>Zaharchenko A.Y.</x:String>
+                            <x:String>Gudkov S.A.</x:String>
+                            <x:String>Drozdov I.A.</x:String> 
+                        </Picker.Items>
+                    </Picker>
 
                 </Grid>
 
@@ -150,9 +159,67 @@
                             <x:String>Удалить</x:String>
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam1" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam1" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+
+                    <Picker x:Name="Fam1" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M. </x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+
                     <Entry x:Name="Poroda1" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place1" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place1" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+
+                    <Picker x:Name="Place1" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String> </x:String>
+                        </Picker.Items>
+                    </Picker>
 
                     <BoxView Color="Gray" WidthRequest="1" HeightRequest="1" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4"/>
 
@@ -206,9 +273,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam2" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam2" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam2" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda2" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place2" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place2" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place2" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -260,9 +382,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam3" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam3" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam3" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda3" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place3" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place3" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place3" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -315,9 +492,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam4" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam4" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam4" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda4" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place4" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place4" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place4" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -372,9 +604,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam5" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam5" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam5" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda5" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place5" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place5" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place5" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -428,9 +715,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam6" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam6" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam6" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda6" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place6" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place6" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place6" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -484,9 +826,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam7" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam7" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam7" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda7" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place7" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place7" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place7" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center" x:Name="comment7"/>
@@ -540,9 +937,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam8" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam8" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam8" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda8" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place8" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place8" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place8" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
@@ -594,9 +1046,64 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="Fam9" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Fam9" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Fam9" Grid.Column="2" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>Balhoshin V.</x:String>
+                            <x:String>Belishev A.</x:String>
+                            <x:String>Belishev M.</x:String>
+                            <x:String>Bubnov A.</x:String>
+                            <x:String>Davidov V.</x:String>
+                            <x:String>Dronov V.</x:String>
+                            <x:String>Dubrovskyi  R.</x:String>
+                            <x:String>Fomichev A.</x:String>
+                            <x:String>Gorelov. Y</x:String>
+                            <x:String>Kachinskas M.</x:String>
+                            <x:String>Karatevskiy E.</x:String>
+                            <x:String>Kirpichev S.</x:String>
+                            <x:String>Korneev S.</x:String>
+                            <x:String>Korotich A.</x:String>
+                            <x:String>Mihaylov I.</x:String>
+                            <x:String>Naumov S.</x:String>
+                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Smirnov S.</x:String>
+                            <x:String>Sokolov D.</x:String>
+                            <x:String>Solovev V.</x:String>
+                            <x:String>Steshenko V.</x:String>
+                            <x:String>Tolstolutskiy N.</x:String>
+                            <x:String>Uklyuev V.</x:String>
+                        </Picker.Items>
+                    </Picker>
                     <Entry x:Name="Poroda9" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>
-                    <Entry x:Name="Place9" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>
+                    <!--<Entry x:Name="Place9" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
+                    <Picker x:Name="Place9" Grid.Column="4" Grid.Row="1" FontSize="Small">
+                        <Picker.Items>
+                            <x:String>South</x:String>
+                            <x:String>West</x:String>
+                            <x:String>North</x:String>
+                            <x:String>Northeast</x:String>
+                            <x:String>1 South</x:String>
+                            <x:String>2 South</x:String>
+                            <x:String>3 South</x:String>
+                            <x:String>4 South</x:String>
+                            <x:String>1 West</x:String>
+                            <x:String>2 West</x:String>
+                            <x:String>3 West</x:String>
+                            <x:String>4 West</x:String>
+                            <x:String>1 North</x:String>
+                            <x:String>2 North</x:String>
+                            <x:String>3 North</x:String>
+                            <x:String>4 North</x:String>
+                            <x:String>5 North</x:String>
+                            <x:String>1 Northeast</x:String>
+                            <x:String>2 Northeast</x:String>
+                            <x:String>3 Northeast</x:String>
+                            <x:String>4 Northeast</x:String>
+                            <x:String>5 Northeast</x:String>
+                            <x:String></x:String>
+                        </Picker.Items>
+                    </Picker>
+
                 </Grid>
 
                 <Label Text="Автомашины" FontSize="Small" HorizontalTextAlignment="Center"/>
