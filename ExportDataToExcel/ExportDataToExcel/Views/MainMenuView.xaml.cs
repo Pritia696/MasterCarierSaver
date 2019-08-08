@@ -437,7 +437,8 @@ namespace ExportDataToExcel.Views
             return model;
         }
 
-        public List<Mashine> GetMashines(Grid grid)
+        public List<Mashine> GetMashines(Grid grid) //ToDo:ошибка возможна тут 
+            
         {
             var counter = 0;
             var oldCounter = -1;
