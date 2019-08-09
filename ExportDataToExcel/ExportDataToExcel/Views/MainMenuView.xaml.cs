@@ -456,17 +456,23 @@ namespace ExportDataToExcel.Views
 
                 if (typeof(Picker) == typeC)
                 {
+                    
                     var r = (Xamarin.Forms.Picker)ch;
-                    var value = r.SelectedItem;
-                    mashines1[counter].Name = value.ToString();
+                    if (r.ItemsSource.Count == 18)
+                    {
+                        var value = r.SelectedItem;
+                        mashines1[counter].Name = value.ToString();
+                    }
+                    if (r.ItemsSource.Count == 44)
+                    {
+                        var value = r.SelectedItem;
+                        mashines1[counter].DriverMName = value.ToString();
+                    }
                 }
                 if (typeof(Entry) == typeC)
                 {
                     var r = (Entry)ch;
-                    if (r.Placeholder == "Водитель")
-                    {
-                        mashines1[counter].DriverMName = r.Text;
-                    }
+                   
                     if (r.Placeholder == "Рейсы")
                     {
                         mashines1[counter].Reis = r.Text;
