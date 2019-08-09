@@ -156,6 +156,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>                            
                             <x:String>Удалить</x:String>
                         </Picker.Items>
                     </Picker>
@@ -179,7 +181,7 @@
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
                             <x:String>Naumov S.</x:String>
-                            <x:String>Shkolenko S.</x:String>
+                            <x:String>Shkolenko S.</x:String>                            
                             <x:String>Smirnov S.</x:String>
                             <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
@@ -286,6 +288,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
@@ -412,6 +416,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
@@ -539,6 +545,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
@@ -668,6 +676,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
@@ -796,6 +806,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
@@ -924,6 +936,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
@@ -1052,6 +1066,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
@@ -1178,6 +1194,8 @@
                             <x:String>Volvo L220F (46-52)</x:String>
                             <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L260H (49-32)</x:String>
+                            <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>

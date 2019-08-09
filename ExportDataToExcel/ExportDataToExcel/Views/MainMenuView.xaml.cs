@@ -35,7 +35,7 @@ namespace ExportDataToExcel.Views
                 "Karpuhin Y.","Kashirskiy I.","Krasavtsev E.","Krestyanskiy V.","Lobanov D.","Mastykash E.",
                 "Nikitin I.E.","Nikitin R.V.","Nikulchev Y.","Novikov V.","Oskolkov V.","Panin V.",
                 "Pleshikov A.","Pletnev Y.","Podolskiy I.N.","Podolskiy I.S.","Polosuev A.","Polzikov N.",
-                "Rvantsev A.","Sergeev A.","Sidorkin A.","Sinitsin E.","Smolnyakov M.","Sorokin A.","Sverchkov A.",
+                "Rvantsev A.","Sergeev A.","Sidorkin A.","Sidorkin M.","Sinitsin E.","Smolnyakov M.","Sorokin A.","Sverchkov A.",
                 "Sychev D.","Tsikunov E.","Ulzutuev Y.","Zadonskiy V.","Zhelanov I."
 
             };
@@ -463,7 +463,7 @@ namespace ExportDataToExcel.Views
                         var value = r.SelectedItem;
                         mashines1[counter].Name = value.ToString();
                     }
-                    if (r.ItemsSource.Count == 44)
+                    if (r.ItemsSource.Count > 40)
                     {
                         var value = r.SelectedItem;
                         mashines1[counter].DriverMName = value.ToString();
