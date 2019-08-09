@@ -1313,7 +1313,7 @@
 
                     <Picker x:Name="Teckn10" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>ДСФ ГБ</x:String>
+                            <x:String>Crashing factory</x:String>
                             <x:String>Удалить</x:String>
 
                         </Picker.Items>
