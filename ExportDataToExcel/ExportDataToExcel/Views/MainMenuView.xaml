@@ -114,7 +114,7 @@
                         <Picker.Items>
                             <x:String>Filimonov S.N.</x:String>
                             <x:String>Zaharchenko A.Y.</x:String>
-                            <x:String>Gudkov S.A.</x:String>
+                            <x:String>Belishev M.A.</x:String>
                             <x:String>Drozdov I.A.</x:String> 
                         </Picker.Items>
                     </Picker>
@@ -148,14 +148,14 @@
 
                     <Picker x:Name="Teckn1" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>                            
                             <x:String>Удалить</x:String>
@@ -167,12 +167,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M. </x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -180,14 +178,15 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>                            
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
 
@@ -196,10 +195,13 @@
                     <Picker x:Name="Poroda1" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -280,18 +282,17 @@
                     <BoxView Color="Gray" WidthRequest="1" HeightRequest="1" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"/>
                     <Picker x:Name="Teckn2" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam2" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -299,12 +300,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -312,24 +311,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda2" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda2" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -337,7 +340,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place2" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
@@ -408,18 +410,17 @@
 
                     <Picker x:Name="Teckn3" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam3" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -427,12 +428,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -440,24 +439,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda3" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda3" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -465,7 +468,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place3" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
@@ -537,18 +539,17 @@
 
                     <Picker x:Name="Teckn4" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam4" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -556,12 +557,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -569,24 +568,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda4" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda4" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -594,7 +597,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place4" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
@@ -668,18 +670,17 @@
 
                     <Picker x:Name="Teckn5" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam5" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -687,12 +688,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -700,24 +699,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda5" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda5" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -725,7 +728,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place5" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
@@ -798,18 +800,17 @@
 
                     <Picker x:Name="Teckn6" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam6" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -817,12 +818,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -830,24 +829,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda6" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda6" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -855,7 +858,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place6" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
@@ -928,18 +930,17 @@
 
                     <Picker x:Name="Teckn7" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam7" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -947,12 +948,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -960,24 +959,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda7" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda7" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -985,7 +988,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place7" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
@@ -1058,18 +1060,17 @@
 
                     <Picker x:Name="Teckn8" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam8" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -1077,12 +1078,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -1090,24 +1089,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda8" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda8" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -1115,7 +1118,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place8" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->
@@ -1186,18 +1188,17 @@
 
                     <Picker x:Name="Teckn9" Grid.Column="1" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
-                            <x:String>Volvo EC480(42-18)</x:String>
-                            <x:String>CAT 374 (19-89)</x:String>
+                            <x:String>Volvo L220F (46-52)</x:String>
+                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L220F (73-49)</x:String>
                             <x:String>CAT 374 (21-29)</x:String>
+                            <x:String>CAT 374 (19-89)</x:String>
                             <x:String>Liebherr 966 (03-91)</x:String>
                             <x:String>Liebherr 976 (08-41)</x:String>
-                            <x:String>Volvo L220F (46-52)</x:String>
-                            <x:String>Volvo L220F (73-49)</x:String>
-                            <x:String>Volvo L220F (86-22)</x:String>
+                            <x:String>Volvo L350H (56-92)</x:String>
                             <x:String>Volvo L260H (49-32)</x:String>
                             <x:String>Volvo L260H (49-33)</x:String>
                             <x:String>Удалить</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Fam9" Grid.Column="2" Grid.Row="1" Placeholder="Фамилия" FontSize="Small"></Entry>-->
@@ -1205,12 +1206,10 @@
                         <Picker.Items>
                             <x:String>Balhoshin V.</x:String>
                             <x:String>Belishev A.</x:String>
-                            <x:String>Belishev M.</x:String>
                             <x:String>Bubnov A.</x:String>
                             <x:String>Davidov V.</x:String>
                             <x:String>Dronov V.</x:String>
                             <x:String>Dubrovskyi  R.</x:String>
-                            <x:String>Fomichev A.</x:String>
                             <x:String>Gorelov. Y</x:String>
                             <x:String>Kachinskas M.</x:String>
                             <x:String>Karatevskiy E.</x:String>
@@ -1218,24 +1217,28 @@
                             <x:String>Korneev S.</x:String>
                             <x:String>Korotich A.</x:String>
                             <x:String>Mihaylov I.</x:String>
-                            <x:String>Naumov S.</x:String>
+                            <x:String>Mihalyov M.</x:String>
                             <x:String>Shkolenko S.</x:String>
                             <x:String>Smirnov S.</x:String>
-                            <x:String>Sokolov D.</x:String>
                             <x:String>Solovev V.</x:String>
                             <x:String>Steshenko V.</x:String>
                             <x:String>Tolstolutskiy N.</x:String>
                             <x:String>Uklyuev V.</x:String>
+                            <x:String>Mastykash E.</x:String>
+                            <x:String>Fedin A.</x:String>
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Poroda9" Grid.Column="3" Grid.Row="1" Placeholder="Порода" FontSize="Small"></Entry>-->
                     <Picker x:Name="Poroda9" Grid.Column="3" Grid.Row="1" FontSize="Small">
                         <Picker.Items>
                             <x:String>Limestone GB</x:String>
-                            <x:String>Limestone TC</x:String>
+                            <x:String>Limestone HC</x:String>
+                            <x:String>Limestone Verh.</x:String>
                             <x:String>Overburden</x:String>
+                            <x:String>Overburden Verh.</x:String>
                             <x:String>Black clay</x:String>
                             <x:String>Quat clay</x:String>
+                            <x:String>Quat clay Verh.</x:String>
                             <x:String>Red clay</x:String>
                             <x:String>Crash</x:String>
                             <x:String>Crash Sand</x:String>
@@ -1243,7 +1246,6 @@
                             <x:String>Crushed stone</x:String>
                             <x:String>Crushed stone flus 40-70</x:String>
                             <x:String>Return</x:String>
-
                         </Picker.Items>
                     </Picker>
                     <!--<Entry x:Name="Place9" Grid.Column="4" Grid.Row="1" Placeholder="Уступ" FontSize="Small"></Entry>-->

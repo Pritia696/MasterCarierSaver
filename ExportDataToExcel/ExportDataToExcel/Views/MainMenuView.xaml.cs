@@ -23,26 +23,34 @@ namespace ExportDataToExcel.Views
 
         List<String> cars = new List<String>
             {
-                "CAT 772G 07-88","CAT 772G 21-59","CAT 772G 21-60","CAT 773G 95-04","Volvo A40G 19-51","Volvo A40G 19-52",
+                "CAT 772G 07-88","CAT 772G 21-59","CAT 772G 21-60","CAT 773G 95-04","CAT 773G 56-82","Volvo A40G 19-51","Volvo A40G 19-52","Volvo A40G 49-22","Volvo A40G 49-23",
                 "Volvo A40F 74-01","Volvo A40F 74-02","Volvo A40E 66-29","Volvo A40E 66-30","Volvo A40E 66-31",
-                "Volvo A40G 42-75","Volvo A40G 42-76","Volvo A40G 42-77","BelAZ 75-40 650","BelAZ 75-40 61-36","Volvo A40G 49-22","Volvo A40G 49-23"
+               "BelAZ 75-40 650","BelAZ 75-40 61-36",
             };
         List<String> drivers = new List<String>
             {
-                "Aleshin A.","Antonov V.","Bahonov I.",
-                "Davidov N.","Eliseev D.","Ermakov A.","Ermolov A.","Ezhikov S.",
+                "Aleshin A.","Bahonov I.",
+                 "Eliseev D.","Ermakov A.","Ermolov A.","Ezhikov S.",
                 "Fedin A.","Fedorov S.","Filimonov A.","Hohlov V.","Isaev S.","Kabanov S.",
-                "Karpuhin Y.","Kashirskiy I.","Krasavtsev E.","Krestyanskiy V.","Lobanov D.","Mastykash E.",
+                "Karpuhin Y.","Kashirskiy I.","Krasavtsev E.","Lobanov D.","Mastykash E.",
                 "Nikitin I.E.","Nikitin R.V.","Nikulchev Y.","Novikov V.","Oskolkov V.","Panin V.",
                 "Pleshikov A.","Pletnev Y.","Podolskiy I.N.","Podolskiy I.S.","Polosuev A.","Polzikov N.",
-                "Rvantsev A.","Sergeev A.","Sidorkin A.","Sidorkin M.","Sinitsin E.","Smolnyakov M.","Sorokin A.","Sverchkov A.",
-                "Sychev D.","Tsikunov E.","Ulzutuev Y.","Zadonskiy V.","Zhelanov I."
+                "Rvantsev A.","Sergeev A.","Sidorkin A.","Sidorkin M.","Sinitsin E.","Smolnyakov M.","Sverchkov A.",
+                "Sychev D.","Tsikunov E.","Ulzutuev Y.","Zadonskiy V."
 
             };
         List<String> technik = new List<String>
             {
-                "Volvo EC480(42-18)"," CAT 374 (19-89)","CAT 374 (21-29)"," Liebherr 966 (03-91)",
-                "Liebherr 976 (08-41)","Volvo L220F (46-52)","Volvo L220F (73-49)","Volvo L220F (86-22)"
+                "Volvo L220F (46-52)",
+                "Volvo L220F (86-22)",
+                "Volvo L220F (73-49)",
+                "CAT 374 (21-29)",
+                "CAT 374 (19-89)",
+                "Liebherr 966 (03-91)",
+                "Liebherr 976 (08-41)",
+                "Volvo L350H (56-92)",
+                "Volvo L260H (49-32)",
+                "Volvo L260H (49-33)"
 
             };
         public MainMenuView()
